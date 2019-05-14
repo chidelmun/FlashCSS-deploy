@@ -1,0 +1,38 @@
+[flash-container],
+.flash-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  background: #fff;
+  position: initial;
+  width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+  justify-content: space-evenly;
+  @media (max-width: 720px) {
+    flex-direction: column;
+  }
+}
+
+.flash-icon-lg{
+  font-size: 5em;
+}
+
+
+@for  $i from 1 through $flash-grid-size {
+  .column-#{$i}-#{$flash-grid-size} {
+    flex-basis: calc((#{$i} / #{$flash-grid-size}) * 99%);
+    border: 1px solid #34aae4;
+    padding: 1% 1%;
+    color: $global-dark-background;
+    @include mobile-sm {
+      flex-basis: 100%;
+    }
+    &.flash-column-bare {
+      border: none;
+    }
+  }
+  .column-#{$i} {
+    flex-basis: calc((#{$flash-grid-size} / #{$i}) * 99%);
+  }
+}

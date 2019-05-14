@@ -1,0 +1,122 @@
+.flash-text-center {
+  text-align: center;
+}
+
+.button-group {
+  display: flex;
+  flex-direction: row;
+  padding: 20px 20px;
+  min-width: 27em;
+  background: transparent;
+  justify-content: space-evenly;
+
+  @media (max-width: $breakpoint-xs) {
+    display: grid;
+    grid-gap: 15px;
+    max-width: calc(100% - 1em);
+  }
+}
+
+.flash-primary-bg{
+  background: $global-primary-color !important;
+  color: #fff !important;
+}
+
+.flash-secondary-bg {
+  background: $global-secondary-color !important;
+  color: #fff !important;
+}
+
+
+/*
+* Animations
+*/
+
+.\@-flash-out {
+  animation: flash-zoom-out 1s;
+}
+
+.\@-flash-out {
+  animation: flash-zoom-out 1s;
+}
+
+.\@-slide-right {
+  animation: flash-slide-in-right 1s;
+}
+
+.\@-slide-left {
+  animation: flash-slide-in-left 1s;
+}
+
+.\@-slide-in-top {
+  animation: flash-in-top 1s;
+}
+
+.\@-slide-in-bottom {
+  animation: flash-in-bottom 1s;
+}
+
+
+@keyframes flash-zoom-out {
+  0%{
+    transform: scale(0.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes flash-zoom-in {
+  0%{
+    transform: scale(2.0);
+  }
+
+  100%{
+    transform: scale(1);
+  }
+}
+
+@keyframes flash-slide-in-right {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+@keyframes flash-in-left {
+  from {
+    margin-left: -100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+@keyframes flash-in-top {
+  from {
+    position: relative;
+    margin-top: -20%;
+  }
+
+  to {
+
+  }
+}
+
+@keyframes flash-in-bottom {
+  from {
+    margin-bottom: -20%;
+  }
+
+  to {
+    //margin-top: 100%;
+  }
+}

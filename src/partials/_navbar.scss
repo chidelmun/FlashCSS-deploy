@@ -1,0 +1,76 @@
+$navbar-background:                              $global-dark-background !default;
+$navbar-max-height:                              $global-navbar-max-height !default;
+$navbar-min-height:                              $global-navbar-min-height !default;
+$navbar-item-spacing:                            $global-navbar-item-spacing !default;
+
+.navbar,
+[narbar] {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  background-color: $navbar-background;
+  color: white;
+  max-height: $navbar-max-height;
+  min-height: $navbar-min-height;
+  justify-content: flex-start;
+  align-items: center;
+  @media (max-width: $breakpoint-sm) {
+    justify-content: center;
+    background: red;
+  }
+
+  .navbar-item {
+    flex-basis: 5%;
+    padding: 0 10px;
+    white-space: nowrap;
+    @media (max-width: $breakpoint-xs) {
+      display: none;
+    }
+
+  }
+
+  &.navbar-right {
+    justify-content: flex-end;
+  }
+
+  &.navbar-left {
+    justify-content: flex-start;
+  }
+
+  &.navbar-center {
+    justify-content: center;
+  }
+
+  &.navbar-even {
+    justify-content: space-between;
+  }
+  &.flash-bg-primary {
+    background: $global-primary-color;
+  }
+  &.flash-bg-secondary {
+    background: $global-secondary-color;
+  }
+
+  &.flash-bg-danger {
+    background: $global-danger-color;
+  }
+  &.flash-bg-dark {
+    background: $global-dark-background;
+  }
+
+  &.flash-bg-warning {
+    background: $global-warning-color;
+  }
+
+  &.flash-bg-info {
+    background: $global-info-color;
+  }
+  &.flash-navbar-fixed {
+    position: fixed !important;
+    min-width: calc(100% - 1em);
+  }
+}
+
+
+
+

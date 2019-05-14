@@ -1,0 +1,20 @@
+.flash-hide\@sm{
+  @media (max-width: $breakpoint-sm) {
+    display: none  !important;
+  }
+}
+
+
+.flash-hide\@md {
+  @media (max-width: $breakpoint-md) {
+    display: none !important;
+  }
+}
+
+
+.flash-hide\@lg {
+  @media (max-width: $breakpoint-lg) {
+    display: none !important;
+  }
+}
+
