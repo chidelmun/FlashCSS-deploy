@@ -255,7 +255,7 @@
 </section>
 <hr>
 <section class="flash-section ">
-    <h4> Section</h4>
+    <h5> Section</h5>
     <div class="flash-container">
         <div class="column-2">
             <h6>Description</h6>
@@ -275,20 +275,26 @@
 <section class="flash-section ">
     <h5> Flash Forms</h5>
     <div class="flash-container">
-        <div class="column-2">
-            <h6>Form types</h6>
-            <h6>Block form</h6>
-            <h6> Inline form </h6>
-            <h6> Form Inputs</h6>
+        <div class="column-2" style="padding: 2em;">
+            <h6 class="flash-text-secondary">inline form</h6>
+            <img src="assets/inline.png" alt="">
+            <h6 class="flash-text-secondary">Block form</h6>
+            <img src="assets/block.png" alt="" style="width: 75%;">
         </div>
-        <div class="column-2">
-            <h6>Customizing</h6>
+        <div class="column-2" style="padding: 2em;">
+            <h6 class="flash-text-secondary">Input classes</h6>
+            <p> Use the following classes with form inputs</p>
+            <img src="assets/bare-inputs.png" alt="" style="width: 75%;">
+            <h6 class="flash-text-secondary">Available classes</h6>
+            <p>Use <code><code>.flash-form or .flash-block-form</code></code> on a form element to create a flash block form</p>
+            <p>Use <code>.flash-form-inline</code> to create an inline display form</p>
+            <p> Use <code>.flash-bare-input</code> on input items to create bare form input form fields as seen above</p>
         </div>
     </div>
 </section>
 
 <section class="flash-section ">
-    <h5> Visibility classes</h5>
+    <h5> Visibility </h5>
     <p>Use the following visibility classes to hide/show elements at the different breakpoints.</p>
     <div class="flash-container">
         <div class="column-2">
@@ -320,30 +326,15 @@
         <div class="column-2">
             <h6>Extending</h6>
             <p> You can also  modify the animation behaviour by changing he duration in <code>src/_utils.scss</code></p>
+            <button class="flash-button @-flash-in flash-info-button"> Flash in </button>
         </div>
     </div>
 </section>
 
+<section class="flash-section ">
+    <h5> Extending Flash </h5>
+    <p>Use the following visibility classes to hide/show elements at the different breakpoints.</p>
 
-<section class="flash-section">
-    <h2> Forms</h2>
-    <form action="" class="flash-form flash-form-inline" autocomplete="off">
-        <label for="username"> Username: </label>
-        <input  id="username" type="text">
-        <label for="password"> Password: </label>
-        <input  id="password" type="password">
-    </form>
-    <hr>
-    <form action="" class="flash-form" autocomplete="off">
-        <label for="email"> Email: </label>
-        <input  id="email" type="email" class="flash-bare-input">
-        <label for="pwd"> Password: </label>
-        <input  id="pwd" type="password">
-        <label for="rem"> Remember Me</label>
-        <input id="rem" type="checkbox">
-        <label for="rem1"></label>
-        <button class="flash-button flash-warning-button"> Login </button>
-    </form>
 </section>
 
 </body>

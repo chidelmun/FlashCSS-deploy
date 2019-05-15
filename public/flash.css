@@ -159,8 +159,8 @@ img {
   animation: flash-zoom-out 1s;
 }
 
-.\@-flash-out {
-  animation: flash-zoom-out 1s;
+.\@-flash-in {
+  animation: flash-zoom-in 1s;
 }
 
 .\@-slide-right {
@@ -196,44 +196,60 @@ img {
   }
 }
 @keyframes flash-slide-in-right {
-  from {
+  0% {
     margin-left: 100%;
     width: 300%;
   }
-  to {
+  100% {
     margin-left: 0%;
     width: 100%;
   }
 }
 @keyframes flash-in-left {
-  from {
+  0% {
     margin-left: -100%;
     width: 300%;
   }
-  to {
+  100% {
     margin-left: 0%;
     width: 100%;
   }
 }
 @keyframes flash-in-top {
-  from {
+  0% {
     position: relative;
     margin-top: -20%;
   }
 }
 @keyframes flash-in-bottom {
-  from {
+  0% {
     margin-bottom: -20%;
   }
 }
-input[type=email],
-input[type=number],
-input[type=search],
-input[type=text],
-input[type=tel],
-input[type=url],
-input[type=password],
-select {
+form input[type=email],
+form input[type=number],
+form input[type=search],
+form input[type=text],
+form input[type=tel],
+form input[type=url],
+form input[type=password],
+form select,
+.flash-form input[type=email],
+.flash-form input[type=number],
+.flash-form input[type=search],
+.flash-form input[type=text],
+.flash-form input[type=tel],
+.flash-form input[type=url],
+.flash-form input[type=password],
+.flash-form select,
+.flash-block-form input[type=email],
+.flash-block-form input[type=number],
+.flash-block-form input[type=search],
+.flash-block-form input[type=text],
+.flash-block-form input[type=tel],
+.flash-block-form input[type=url],
+.flash-block-form input[type=password],
+.flash-block-form select {
   padding: 6px 10px;
   border: 1px solid #D1D1D1;
   border-radius: 4px;
@@ -243,111 +259,127 @@ select {
   height: 2em;
   font-size: inherit;
 }
-input[type=email]:focus,
-input[type=number]:focus,
-input[type=search]:focus,
-input[type=text]:focus,
-input[type=tel]:focus,
-input[type=url]:focus,
-input[type=password]:focus,
-select:focus {
+form input[type=email]:focus,
+form input[type=number]:focus,
+form input[type=search]:focus,
+form input[type=text]:focus,
+form input[type=tel]:focus,
+form input[type=url]:focus,
+form input[type=password]:focus,
+form select:focus,
+.flash-form input[type=email]:focus,
+.flash-form input[type=number]:focus,
+.flash-form input[type=search]:focus,
+.flash-form input[type=text]:focus,
+.flash-form input[type=tel]:focus,
+.flash-form input[type=url]:focus,
+.flash-form input[type=password]:focus,
+.flash-form select:focus,
+.flash-block-form input[type=email]:focus,
+.flash-block-form input[type=number]:focus,
+.flash-block-form input[type=search]:focus,
+.flash-block-form input[type=text]:focus,
+.flash-block-form input[type=tel]:focus,
+.flash-block-form input[type=url]:focus,
+.flash-block-form input[type=password]:focus,
+.flash-block-form select:focus {
   border: 1px solid #33C3F0;
   outline: 0;
 }
-input[type=email].flash-bare-input,
-input[type=number].flash-bare-input,
-input[type=search].flash-bare-input,
-input[type=text].flash-bare-input,
-input[type=tel].flash-bare-input,
-input[type=url].flash-bare-input,
-input[type=password].flash-bare-input,
-select.flash-bare-input {
+form input[type=email].flash-bare-input,
+form input[type=number].flash-bare-input,
+form input[type=search].flash-bare-input,
+form input[type=text].flash-bare-input,
+form input[type=tel].flash-bare-input,
+form input[type=url].flash-bare-input,
+form input[type=password].flash-bare-input,
+form select.flash-bare-input,
+.flash-form input[type=email].flash-bare-input,
+.flash-form input[type=number].flash-bare-input,
+.flash-form input[type=search].flash-bare-input,
+.flash-form input[type=text].flash-bare-input,
+.flash-form input[type=tel].flash-bare-input,
+.flash-form input[type=url].flash-bare-input,
+.flash-form input[type=password].flash-bare-input,
+.flash-form select.flash-bare-input,
+.flash-block-form input[type=email].flash-bare-input,
+.flash-block-form input[type=number].flash-bare-input,
+.flash-block-form input[type=search].flash-bare-input,
+.flash-block-form input[type=text].flash-bare-input,
+.flash-block-form input[type=tel].flash-bare-input,
+.flash-block-form input[type=url].flash-bare-input,
+.flash-block-form input[type=password].flash-bare-input,
+.flash-block-form select.flash-bare-input {
   border-top: none;
   border-left: none;
   border-right: none;
 }
-input[type=email].flash-bare-input:focus,
-input[type=number].flash-bare-input:focus,
-input[type=search].flash-bare-input:focus,
-input[type=text].flash-bare-input:focus,
-input[type=tel].flash-bare-input:focus,
-input[type=url].flash-bare-input:focus,
-input[type=password].flash-bare-input:focus,
-select.flash-bare-input:focus {
+form input[type=email].flash-bare-input:focus,
+form input[type=number].flash-bare-input:focus,
+form input[type=search].flash-bare-input:focus,
+form input[type=text].flash-bare-input:focus,
+form input[type=tel].flash-bare-input:focus,
+form input[type=url].flash-bare-input:focus,
+form input[type=password].flash-bare-input:focus,
+form select.flash-bare-input:focus,
+.flash-form input[type=email].flash-bare-input:focus,
+.flash-form input[type=number].flash-bare-input:focus,
+.flash-form input[type=search].flash-bare-input:focus,
+.flash-form input[type=text].flash-bare-input:focus,
+.flash-form input[type=tel].flash-bare-input:focus,
+.flash-form input[type=url].flash-bare-input:focus,
+.flash-form input[type=password].flash-bare-input:focus,
+.flash-form select.flash-bare-input:focus,
+.flash-block-form input[type=email].flash-bare-input:focus,
+.flash-block-form input[type=number].flash-bare-input:focus,
+.flash-block-form input[type=search].flash-bare-input:focus,
+.flash-block-form input[type=text].flash-bare-input:focus,
+.flash-block-form input[type=tel].flash-bare-input:focus,
+.flash-block-form input[type=url].flash-bare-input:focus,
+.flash-block-form input[type=password].flash-bare-input:focus,
+.flash-block-form select.flash-bare-input:focus {
   transform: scale(1.1);
 }
-input[type=email] label,
-input[type=number] label,
-input[type=search] label,
-input[type=text] label,
-input[type=tel] label,
-input[type=url] label,
-input[type=password] label,
-select label {
+form label,
+.flash-form label,
+.flash-block-form label {
   display: block;
   margin-bottom: 0.5rem;
   font-weight: 600;
 }
-input[type=email] fieldset,
-input[type=number] fieldset,
-input[type=search] fieldset,
-input[type=text] fieldset,
-input[type=tel] fieldset,
-input[type=url] fieldset,
-input[type=password] fieldset,
-select fieldset {
+form fieldset,
+.flash-form fieldset,
+.flash-block-form fieldset {
   padding: 0;
   border-width: 0;
 }
-input[type=email] input[type=checkbox],
-input[type=email] input[type=radio],
-input[type=number] input[type=checkbox],
-input[type=number] input[type=radio],
-input[type=search] input[type=checkbox],
-input[type=search] input[type=radio],
-input[type=text] input[type=checkbox],
-input[type=text] input[type=radio],
-input[type=tel] input[type=checkbox],
-input[type=tel] input[type=radio],
-input[type=url] input[type=checkbox],
-input[type=url] input[type=radio],
-input[type=password] input[type=checkbox],
-input[type=password] input[type=radio],
-select input[type=checkbox],
-select input[type=radio] {
+form input[type=checkbox],
+form input[type=radio],
+.flash-form input[type=checkbox],
+.flash-form input[type=radio],
+.flash-block-form input[type=checkbox],
+.flash-block-form input[type=radio] {
   display: inline;
 }
-input[type=email] textarea,
-input[type=number] textarea,
-input[type=search] textarea,
-input[type=text] textarea,
-input[type=tel] textarea,
-input[type=url] textarea,
-input[type=password] textarea,
-select textarea {
+form textarea,
+.flash-form textarea,
+.flash-block-form textarea {
   min-height: 65px;
   padding-top: 6px;
   padding-bottom: 6px;
 }
-input[type=email] form.flash-form-inline,
-input[type=email] flash-form.flash-form-inline,
-input[type=number] form.flash-form-inline,
-input[type=number] flash-form.flash-form-inline,
-input[type=search] form.flash-form-inline,
-input[type=search] flash-form.flash-form-inline,
-input[type=text] form.flash-form-inline,
-input[type=text] flash-form.flash-form-inline,
-input[type=tel] form.flash-form-inline,
-input[type=tel] flash-form.flash-form-inline,
-input[type=url] form.flash-form-inline,
-input[type=url] flash-form.flash-form-inline,
-input[type=password] form.flash-form-inline,
-input[type=password] flash-form.flash-form-inline,
-select form.flash-form-inline,
-select flash-form.flash-form-inline {
+form.flash-form-inline,
+.flash-form.flash-form-inline,
+.flash-block-form.flash-form-inline {
   display: flex;
   flex-direction: row;
-  align-items: baseline;
+  align-items: center;
+}
+
+@media (max-width: 480px) {
+  .flash-hide\@xs {
+    display: none !important;
+  }
 }
 
 @media (max-width: 720px) {

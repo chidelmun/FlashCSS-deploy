@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node index.js",
     "pack": "sass src/flash.scss build/flash.css",
-    "dev-build": "sass src/flash.scss demo/flash.css --watch"
+    "dev-build": "sass src/flash.scss public/flash.css --watch"
   },
   "dependencies": {
     "express": "^4.13.3"
