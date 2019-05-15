@@ -407,6 +407,7 @@ form.flash-form-inline,
 }
 .flash-section.flash-section-primary {
   background: #0FA0CE;
+  color: #fff;
 }
 .flash-section.flash-section-secondary {
   background: #ce822e;
