@@ -36,8 +36,8 @@
   animation: flash-zoom-out 1s;
 }
 
-.\@-flash-out {
-  animation: flash-zoom-out 1s;
+.\@-flash-in {
+  animation: flash-zoom-in 1s;
 }
 
 .\@-slide-right {
@@ -77,46 +77,46 @@
 }
 
 @keyframes flash-slide-in-right {
-  from {
+  0% {
     margin-left: 100%;
     width: 300%;
   }
 
-  to {
+  100% {
     margin-left: 0%;
     width: 100%;
   }
 }
 
 @keyframes flash-in-left {
-  from {
+  0% {
     margin-left: -100%;
     width: 300%;
   }
 
-  to {
+  100% {
     margin-left: 0%;
     width: 100%;
   }
 }
 
 @keyframes flash-in-top {
-  from {
+  0% {
     position: relative;
     margin-top: -20%;
   }
 
-  to {
+  100% {
 
   }
 }
 
 @keyframes flash-in-bottom {
-  from {
+  0% {
     margin-bottom: -20%;
   }
 
-  to {
+  100% {
     //margin-top: 100%;
   }
 }

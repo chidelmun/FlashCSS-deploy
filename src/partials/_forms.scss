@@ -24,11 +24,12 @@ select {
     border-top: none;
     border-left: none;
     border-right: none;
-    &:focus{
+
+    &:focus {
       transform: scale(1.1);
     }
   }
-
+}
   label {
     display: block;
     margin-bottom: .5rem;
@@ -52,12 +53,7 @@ select {
     padding-bottom: 6px;
   }
 
-  form,
-  flash-form {
-    &.flash-form-inline {
-      display: flex;
-      flex-direction: row;
-      align-items: baseline;
-    }
-  }
+form,
+.flash-form {
+  font-size: 2em;
 }
