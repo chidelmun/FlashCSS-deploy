@@ -282,7 +282,7 @@
             <h6> Form Inputs</h6>
         </div>
         <div class="column-2">
-            <h6>Code usage</h6>
+            <h6>Customizing</h6>
         </div>
     </div>
 </section>
@@ -290,10 +290,18 @@
 <section class="flash-section ">
     <h5> Visibility classes</h5>
     <p>Use the following visibility classes to hide/show elements at the different breakpoints.</p>
-    <code>flash-hide@xs</code><br>
-    <code>flash-hide@sm</code><br>
-    <code>lfash-hide@md</code><br>
-    <code>flash-hide@lg</code><br>
+    <div class="flash-container">
+        <div class="column-2">
+            <code>flash-hide@xs</code><br>
+            <code>flash-hide@sm</code><br>
+            <code>lfash-hide@md</code><br>
+            <code>flash-hide@lg</code><br>
+        </div>
+        <div class="column-2">
+            <h6>Extending</h6>
+            <p> Override the visibility classes in the source files in <code>src/_visibility.scss</code></p>
+        </div>
+    </div>
 </section>
 
 <section class="flash-section">
@@ -303,14 +311,15 @@
     <div class="flash-container">
         <div class="column-2">
             <h6>Available animations</h6>
-            <code>@flash-out</code><br>
-            <code>@flash-in</code><br>
+            <code>@-flash-out</code><br>
+            <code>@-flash-in</code><br>
             <code>@-slide-left</code><br>
             <code>@-slide-in-top</code><br>
             <code>@-slide-in-bottom</code><br>
         </div>
         <div class="column-2">
-
+            <h6>Extending</h6>
+            <p> You can also  modify the animation behaviour by changing he duration in <code>src/_utils.scss</code></p>
         </div>
     </div>
 </section>
