@@ -12,7 +12,7 @@
         <a href="#" class="navbar-item"> Flash CSS</a>
         <a href="#features" class="navbar-item">Features </a>
         <a href="#docs" class="navbar-item" > Documentation</a>
-        <a href="#" class="navbar-item"> Github </a>
+        <a href="https://github.com/chidelmun/FlashCSS" class="navbar-item"> Github </a>
         <a href="#" class="navbar-item"> FAQ </a>
     </nav>
 </header>
@@ -21,7 +21,7 @@
     <h2 class="@-slide-in-top"> A lightweight Extensible CSS Framework</h2>
     <p>Free and open source by Delveri Chick</p>
     <div class="button-group @-flash-out">
-        <button class="flash-button flash-primary-button">Download</button>
+        <button class="flash-button flash-primary-button" onclick="window.location.href='https://github.com/chidelmun/FlashCSS-deploy/raw/master/build.zip'">Download</button>
         <button class="flash-button flash-secondary-button" onclick="window.location.href='#docs'"> Docs</button>
     </div>
 </div>
@@ -48,18 +48,18 @@
 <section class="flash-section flash-primary-bg flash-text-center">
     <h2>Installation</h2>
     <div class="flash-container">
-        <div class="column-1-6">
+        <div class="column-2-6">
             <h1>1</h1>
-            <h6> Download the framework files</h6>
+            <h6> Download the framework files and Extract the framework files</h6>
         </div>
 
-        <div class="column-1-6">
-            <h1>2</h1>
-            <h6>Extract the framework files</h6>
-        </div>
+        <!--<div class="column-2-6">-->
+            <!--<h1>2</h1>-->
+            <!--<h6>Extract the framework files</h6>-->
+        <!--</div>-->
 
-        <div class="column-1-6">
-                <h1>3</h1>
+        <div class="column-2-6">
+                <h1>2</h1>
             <h6>What is included?</h6>
             <code>
                 /*Files*/
@@ -69,7 +69,7 @@
         </div>
 
         <div class="column-2-6">
-            <h1>4</h1>
+            <h1>3</h1>
             <h6> Include any of the above files into your HTML page</h6>
             <code>
                 <p>
@@ -80,12 +80,20 @@
                 </p>
             </code>
         </div>
+    </div>
+    <div class="flash-container">
+       <div class="column-1" style="color: black;">
+           <h3 class="flash-text-warning"> Building from source </h3>
+               <p> THe source files of Flash are available on Github for download and customization</p>.
+                <h6>How to customize Flash?</h6>
+                 <p>Costomization of flashcss means making changes to the source and rebuilding it before using in your website</p>
+                <strong>1 Create a new <code>*.scss</code> file </strong>
+                <strong>2 Override variables in <code>/src/partials/*.scss</code></strong>
+                <strong>3 Include <code>src/flash.scss</code> last before rebuilding by running <code>npm run pack</code> </strong>
+                <p>Build files will be written to the build directory</p>
+                <code> build/flash.css</code>
 
-        <div class="column-1-6">
-            <h1>5</h1>
-            <h6> All set!!</h6>
-        </div>
-
+       </div>
     </div>
 </section>
 <br>
@@ -111,6 +119,8 @@
                     &lt;button class="flash-button flash-info-button"&gt; Info Button&lt;/button&gt;<br>
                     &lt;button class="flash-button flash-warning-button"&gt; Warning Button&lt;/button&gt;
                 </code>
+                <h6>Customize</h6>
+                <p>You can customize the color theme by assigning new values to the variables defined in <code>src/_buttons.scss</code></p>
             </div>
         </div>
     </div>
@@ -336,7 +346,7 @@
 <section class="flash-section flash-section-primary" style="    display: flex;
     flex-direction: column;
     justify-content: flex-end;     font-size: 1.2em;">
-    <p class="flash-text-center"> &copy 2019 Please download the source from <a href="" class="flash-text-secondary">Github</a> to make changes.</p>
+    <p class="flash-text-center"> &copy 2019 Please download the source from <a href="https://github.com/chidelmun/FlashCSS" class="flash-text-secondary">Github</a> to make changes.</p>
     <div class="flash-container">
     </div>
 </section>
